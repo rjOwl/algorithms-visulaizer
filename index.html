@@ -33,12 +33,12 @@
               <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sorting Algorithms
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Bubble Sort</a>
-                <a class="dropdown-item" href="#">Selection Sort</a>
-                <a class="dropdown-item" href="#">Merge Sort</a>
-                <a class="dropdown-item" href="#">Quick Sort</a>
-                <a class="dropdown-item" href="#">Radix Sort</a>
+              <div id="sortAlgo" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#" value="0">Bubble Sort</a>
+                <a class="dropdown-item" href="#" value="1">Selection Sort</a>
+                <a class="dropdown-item" href="#" value="2">Merge Sort</a>
+                <a class="dropdown-item" href="#" value="3">Quick Sort</a>
+                <a class="dropdown-item" href="#" value="4">Radix Sort</a>
               </div>
             </li>
             
@@ -56,9 +56,9 @@
                 <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Data
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Bars</a>
-                  <a class="dropdown-item" href="#">Your Dataset</a>
+                <div id="DataSet" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#" value="0">Bars</a>
+                  <a class="dropdown-item" href="#" value="1">Your Dataset</a>
                 </div>
               </li>
 
@@ -83,17 +83,19 @@
                 </ul>
               </div>
             </nav>
-    <svg id="bars" version="1.1" baseProfile="full" width="100%" height="400" 
-    xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink"
-    style="margin-top: 20px;">
-    <!-- <rect class="rect1" fill="black" height="200" width="6" x="5" />
-      <rect class="rect2" fill="black" height="30" width="6" x="10" />
-      <rect class="rect3" fill="black" height="30" width="6" x="20" />
-        <rect class="rect4" fill="black" height="30" width="6" x="30" />
-        <rect class="rect5" fill="black" height="30" width="6" x="40" /> -->
-      </svg>
+            
+            <div class="d-flex justify-content-center">
+              <svg id="bars" version="1.1" baseProfile="full" width='1300'height="400" 
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink"
+                  style="margin-top: 20px;">
+              </svg>
+          </div>
       
     </body>
+    <script src="globals.js"></script>
+    <script src="helpers.js"></script>
+    <script src="logic.js"></script>
     <script src="sortingAlgo/selectionSort.js"></script>
+    <script src="sortingAlgo/bubbleSort.js"></script>
     </html>
     
