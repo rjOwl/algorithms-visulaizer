@@ -9,13 +9,15 @@ let sortChoice = "-1"
 
 sortingAlgo.addEventListener("click", (e)=>{
     sortChoice = e.target.attributes[2].value
+    console.log("Sorting meny")
+    console.log(sortChoice)
 })
 
 generateData.addEventListener("click", (e)=>{
     index = e.target.attributes[2].value
     switch(index){
         case "0":
-            data = createRandomBars(50);
+            data = createRandomBars(10);
             break;
         case "1":
             break;
@@ -25,6 +27,10 @@ generateData.addEventListener("click", (e)=>{
 })
 
 sort.addEventListener("click", function(){
+    ANIMATION_SPEED_MS=200
+    console.log("SORT PRESSED meny")
+    console.log(sortChoice)
+
     switch(sortChoice){
         case "0":
             bubbleSort(data.heigth, data.bars)
@@ -35,6 +41,7 @@ sort.addEventListener("click", function(){
         case "1":
             break;
         default:
+            console.log("SORTING DEFUALT")
             break;
     }
 })

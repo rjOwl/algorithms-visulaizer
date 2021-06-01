@@ -38,10 +38,11 @@ function generateRandomBars(){
 }
 
 function updateStyle(bar, height, color) {
-    ANIMATION_SPEED_MS += 100;
-    setTimeout(() => {
+    ANIMATION_SPEED_MS += 20;
+    IntervalID = setTimeout(() => {
         bar.setAttribute('fill', color);
         bar.setAttribute('height', height);
+        clearTimeout(IntervalID)
     }, ANIMATION_SPEED_MS)
 }
 
