@@ -1,6 +1,6 @@
 let x_cor = []
 let o = 1
-console.log(data);
+
 function selectionSortAnimation(dataArr, bars){
     for(let i = 0; i <dataArr.length-1; i++){
         minIndex = i;
