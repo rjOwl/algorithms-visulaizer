@@ -1,9 +1,10 @@
 const sortingAlgo = document.getElementById("sortAlgo")
+const barsRange = document.getElementById("barsRange")
 
 const sort = document.getElementById("sort")
 const generateData = document.getElementById("DataSet")
 
-let data = createRandomBars(150);
+let data = createRandomBars(50);
 
 let sortChoice = "-1"
 
@@ -17,7 +18,7 @@ generateData.addEventListener("click", (e)=>{
     index = e.target.attributes[2].value
     switch(index){
         case "0":
-            data = createRandomBars(10);
+            data = createRandomBars(barsRange.value);
             break;
         case "1":
             break;
@@ -25,8 +26,8 @@ generateData.addEventListener("click", (e)=>{
             break;
     }
 })
-
 sort.addEventListener("click", function(){
+    console.log(barsRange.value)
     ANIMATION_SPEED_MS=200
     console.log("SORT PRESSED meny")
     console.log(sortChoice)
