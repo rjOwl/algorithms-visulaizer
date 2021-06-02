@@ -14,18 +14,23 @@ sortingAlgo.addEventListener("click", (e)=>{
     console.log(sortChoice)
 })
 
-generateData.addEventListener("click", (e)=>{
-    index = e.target.attributes[2].value
-    switch(index){
-        case "0":
-            data = createRandomBars(barsRange.value);
-            break;
-        case "1":
-            break;
-        default:
-            break;
-    }
-})
+function setData(length){
+    data = createRandomBars(length)
+}
+
+// generateData.addEventListener("click", (e)=>{
+//     index = e.target.attributes[2].value
+//     switch(index){
+//         case "0":
+//             data = createRandomBars(barsRange.value);
+//             break;
+//         case "1":
+//             break;
+//         default:
+//             break;
+//     }
+// })
+
 sort.addEventListener("click", function(){
     console.log(barsRange.value)
     ANIMATION_SPEED_MS=200
